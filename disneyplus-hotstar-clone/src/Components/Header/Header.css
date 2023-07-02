@@ -54,7 +54,7 @@
     width: 20px;
 }
 
-span {
+.menuItem{
     color: rgb(249, 249, 249);
     letter-spacing: 1.42px;
     line-height: 1.08;
@@ -66,7 +66,7 @@ span {
     cursor: pointer;
 }
 
-span:before {
+.menuItem:before {
     background-color: rgb(249, 249, 249);
     border-radius: 0px 0px 4px 4px;
     bottom: -6px;
@@ -83,7 +83,7 @@ span:before {
     width: auto;
 }
 
-span:hover:before {
+.menuItem:hover:before {
     visibility: visible;
     opacity: 1;
     transform: scaleX(1);
@@ -103,4 +103,39 @@ span:hover:before {
     background-color: #f9f9f9;
     color: #000;
     border-color: transparent;
+}
+
+.profile{
+   position: relative;
+   height: 48px;
+   width: 48px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   cursor: pointer;
+}
+
+.dropDown{
+    letter-spacing: 3px;
+    font-size: 14px;
+    background: rgb(19, 19, 19);
+    position: absolute;
+    top: 48px;
+    right: 0px;
+    border: 1px solid rgba(151, 151, 151, 0.34);
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: rgb(0 0 0 / 50%) 0px 0px 18px 0px;
+    width: 100px;
+    opacity: 0;
+}
+
+.profilePic{
+    height: 100%;
+    border-radius: 50%;
+}
+
+.profile:hover .dropDown{
+    opacity: 1;
+    transition: 1s;
 }

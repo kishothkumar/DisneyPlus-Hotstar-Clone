@@ -1,6 +1,6 @@
 import React from 'react'
-import logo_one from '../assets/images/cta-logo-one.svg'
-import logo_two from '../assets/images/cta-logo-two.png'
+import logo_one from '../../assets/images/cta-logo-one.svg'
+import logo_two from '../../assets/images/cta-logo-two.png'
 import './Login.css'
 
 const Login = (props) => {
