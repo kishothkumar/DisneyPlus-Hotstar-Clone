@@ -1,0 +1,26 @@
+.poster__container{
+    padding: 0 0 26px;
+}
+
+.poster__content{
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+
+    @media (max-width: 768px) {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+.poster__img{
+    inset: 0;
+    display: block;
+    position: absolute;
+    top: 0;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    transition: opacity 500ms ease-in-out 0s;
+    z-index: 1;
+}
