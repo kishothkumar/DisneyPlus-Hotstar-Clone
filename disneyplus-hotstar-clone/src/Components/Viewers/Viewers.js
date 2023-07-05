@@ -16,6 +16,7 @@ const Viewers = () => {
     <div className='viewersContainer'>
         <div className='imgWrap'>
             <img src={Disney} alt=''></img>
+
             <video autoPlay={true} loop={true} playsInline={true}>
                 <source src={DisneyVideo} type='video/mp4'></source>
             </video>

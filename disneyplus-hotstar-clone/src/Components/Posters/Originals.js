@@ -14,7 +14,7 @@ const Originals = () => {
         <div className='poster__content'>
             {
                 movies && movies.map((movie, key) => (
-                    <div key={key} className='imgWrap'>
+                    <div key={key} className='poster__imgWrap'>
                         <Link to={'/detail/'+ movie.id}>
                             <img src={movie.cardImg} alt={movie.title} className='poster__img'></img>
                         </Link>
