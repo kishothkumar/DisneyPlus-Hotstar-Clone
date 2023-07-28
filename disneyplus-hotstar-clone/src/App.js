@@ -4,8 +4,10 @@ import Header from './Components/Header/Header';
 import Home from './Components/Home/Home';
 import Login from './Components/Login/Login';
 import Detail from './Components/Detail/Detail';
+import Footer from './Components/Footer/Footer';
 
 function App() {
+
   return (
     <div className="App">
       <Router>
@@ -19,6 +21,7 @@ function App() {
         <Routes>
           <Route path="/detail/:id" element={<Detail/>} />
         </Routes>
+        <Footer />
       </Router>
     </div>
   );

@@ -4,10 +4,6 @@
     gap: 25px;
     grid-template-columns: repeat(5, minmax(0, 1fr));
     margin-top: 30px;
-
-    @media (max-width: 768px) {
-        grid-template-columns: repeat(1, minmax(0, 1fr));
-    }
 }
 
 .imgWrap {
@@ -53,4 +49,10 @@
 
 .imgWrap:hover video{
     opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+    .viewersContainer {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
 }

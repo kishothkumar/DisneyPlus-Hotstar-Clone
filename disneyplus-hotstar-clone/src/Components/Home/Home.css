@@ -15,3 +15,7 @@
     opacity: 1;
     z-index: -1;
 }
+
+.homeContainer ~ footer {
+    bottom: -52px;
+}

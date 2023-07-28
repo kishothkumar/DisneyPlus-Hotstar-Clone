@@ -38,10 +38,6 @@
     position: relative;
     margin-right: auto;
     margin-left: 25px;
-
-    @media (max-width: 768px) {
-        display: none;
-    }
 }
 
 .menus{
@@ -138,4 +134,10 @@
 .profile:hover .dropDown{
     opacity: 1;
     transition: 1s;
+}
+
+@media screen and (max-width: 950px) {
+    .menu {
+        display: none;
+    }
 }
